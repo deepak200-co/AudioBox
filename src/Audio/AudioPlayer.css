@@ -1,0 +1,115 @@
+body {
+  background: url('../Pic.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.audio-player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  margin: 20px auto;
+  overflow: auto;
+}
+.audio-player{
+  width: 100%;
+}
+
+audio {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.audio-controls {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+.file-input-container {
+  margin-bottom: 20px;
+  width: max-content;
+  background-color: #2ecc71;
+}
+
+.audio-info {
+  margin-bottom: 15px;
+  border: 2px solid #3498db;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: rgba(52, 152, 219, 0.5); /* Adjust the opacity as needed */
+  padding: 10px;
+  color: white;
+
+ 
+}
+.playlist-container{
+  color: white;
+}
+/* Font Awesome icons */
+.fa-backward,
+.fa-forward {
+  font-size: 18px;
+}
+
+.fa-backward:hover,
+.fa-forward:hover {
+  color: #fff;
+}
+
+
+/* Add these styles to your AudioPlayer.css */
+
+/* Add these styles to your AudioPlayer.css */
+
+.playlist-container {
+  margin-top: 20px;
+}
+
+.song-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 songs per row */
+  gap: 10px; /* Adjust the gap between boxes */
+}
+
+.song-box {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.song-box:hover {
+  background-color: #2980b9;
+}
